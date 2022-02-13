@@ -34,6 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
       system.textContent = form.system.value;
       gameCollectionItem.appendChild(system);
 
+      const completed = document.createElement("p");
+      if (form.completed.checked === true) {
+          completed.textContent = "You've completed it!"
+      } else {
+          completed.textContent = "Still to complete."
+      }
+      gameCollectionItem.appendChild(completed);
+
       return gameCollectionItem;
   }
 
