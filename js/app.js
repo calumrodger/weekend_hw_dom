@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const createGameCollectionItem = function (form) {
       const gameCollectionItem = document.createElement("li");
-      gameCollectionItem.classList.add("game-collection-item");
+      gameCollectionItem.classList.add("#game-collection-item");
 
       const title = document.createElement("h2");
       title.textContent = form.title.value;
